@@ -6,10 +6,10 @@
 lang: "en"
 
 # Name of your site (displayed in the header)
-title: Quick With Words
+title: Kairoz' blog
 
 # Short bio or description (displayed in the header)
-description: Practicing Writing in English
+description: Thoughts or things I want to share
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://github.com/KairozSS.png
@@ -20,7 +20,7 @@ avatar: https://github.com/KairozSS.png
 
 # Your website URL (e.g. https://forever-jekyll.github.io or https://forever-jekyll.com)
 # Used for Sitemap.xml and your RSS feed
-url: https://english.kairoz.dev
+url: https://blog.kairoz.dev
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
