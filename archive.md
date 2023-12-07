@@ -11,7 +11,7 @@ title: Archive
   <ul>
     {% for post in yearMonth.items %}
       <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         <span class="small">{{ post.date | date: '%B %d, %Y' }}</span>
       </li>
     {% endfor %}
