@@ -7,24 +7,24 @@
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css"/>
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/ress/dist/ress.min.css"/>
-    <link rel="apple-touch-icon" sizes="57x57" href="/assets/image/favicon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/assets/image/favicon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/assets/image/favicon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/assets/image/favicon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/assets/image/favicon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/assets/image/favicon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/assets/image/favicon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/assets/image/favicon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/image/favicon-180x180.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/image/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/image/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/assets/image/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/assets/image/favicon-192x192.png">
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/image/favicon.ico">
-    <link rel="icon" type="image/x-icon" href="/assets/image/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ site.baseurl }}/assets/image/favicon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ site.baseurl }}/assets/image/favicon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ site.baseurl }}/assets/image/favicon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ site.baseurl }}/assets/image/favicon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ site.baseurl }}/assets/image/favicon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ site.baseurl }}/assets/image/favicon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ site.baseurl }}/assets/image/favicon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ site.baseurl }}/assets/image/favicon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/image/favicon-180x180.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/assets/image/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/assets/image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ site.baseurl }}/assets/image/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ site.baseurl }}/assets/image/favicon-192x192.png">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/assets/image/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/assets/image/favicon.ico">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/assets/image/favicon-144x144.png">
-    <meta name="msapplication-config" content="/assets/image/browserconfig.xml">
+    <meta name="msapplication-TileImage" content="{{ site.baseurl }}/assets/image/favicon-144x144.png">
+    <meta name="msapplication-config" content="{{ site.baseurl }}/assets/image/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous" media="print" onload="this.media='all'"/>
@@ -83,11 +83,10 @@
       </div>
     </div>
 
-    <script defer src="https://cdn.plyr.io/3.6.5/plyr.js"></script>
-    <script>
-      const player = new Plyr("#player", { noCookie: true, rel: 0, showinfo: 0, iv_load_policy: 3, modestbranding: 1, playsinline: 1 , enablejsapi: 1, autoplay: 0, focused: true, global: false });
-      window.player = player;
-    </script>
+    <script defer src="https://cdn.plyr.io/3.6.5/plyr.js" onload="
+          const player = new Plyr('#player', { noCookie: true, rel: 0, showinfo: 0, iv_load_policy: 3, modestbranding: 1, playsinline: 1 , enablejsapi: 1, autoplay: 0, focused: true, global: false });
+          window.player = player;
+      "></script>
 
     <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
     <script type="text/javascript">
@@ -98,8 +97,7 @@
       });
     </script>
 
-    <script defer src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-    <script>mermaid.initialize({startOnLoad:true});</script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js" onload="mermaid.initialize({startOnLoad:true});"></script>
 
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js" integrity="sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/auto-render.min.js"
