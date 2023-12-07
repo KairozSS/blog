@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Search
-permalink: /search
+permalink: blog/search/
 ---
   
 #### Looking for something?  
