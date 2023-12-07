@@ -34,13 +34,13 @@ navigation_links:
     url: /
 
   - title: About
-    url: /about/
+    url: /about
 
   - title: Archive
-    url: /archive/
+    url: /archive
 
   - title: Search
-    url: /search/
+    url: /search
 
 # Footer icons
 footer_links:
