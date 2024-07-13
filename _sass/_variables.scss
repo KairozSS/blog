@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+//
+// VARIABLES
+//
+
+// Colors
+$white: #FFFFFF;
+$black: #000000;
+$gray: #666666;
+$lightGray: #EEEEEE;
+$paleGray: #DDDDDD;
+$darkGray: #333333;
+$darkerGray: #222222;
+$blue: #4183C4;
+$purple: #4141C4;
+$mahogany: #BD2C00;
+
+// Pagination colors
+$pagination-color: $darkGray;
+$pagination-hover-color: $blue;
+$pagination-active-bg: $blue;
+$pagination-active-color: $white;
+$pagination-separator-color: $paleGray;
+
+// Font stacks
+$helvetica: Helvetica, Arial, sans-serif;
+$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$georgia: Georgia, serif;
+
+$code-font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", Consolas, Menlo, Monaco, "Noto Sans Mono", "Noto Mono", "Roboto Mono", "Droid Sans Mono", Cousine, Inconsolata, "Liberation Mono", "Ubuntu Mono", "DejaVu Sans Mono", "Courier New", monospace;
+
+// Mobile breakpoints
+@mixin mobile {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}
+
+// Transitions
+$time: 250ms;
